@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h3 {
+  color: #fff;
+}
+
 .container {
   padding: 5rem;
   display: flex;
@@ -12,14 +16,20 @@
 
 .cards-container {
   display: flex;
-  gap: 3px;
+  /* gap: 10px; */
   list-style: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
+/* .cards-container > :nth-child(1) {
+  margin-right: -12px;
+} */
+
 .tariffs-card {
-  border: 2px solid red;
   text-align: center;
-  width: 220px;
+  width: 250px;
+  border: 2px solid white;
 }
 
 .tariff-title-1 {
@@ -29,22 +39,29 @@
 }
 
 .tariff-title-2 {
-  background-color: #4caf50; /* Customize the background color */
+  background-color: #4caf50;
+  padding: 1rem;
+  margin: 1px;
 }
 
 .tariff-title-3 {
-  background-color: #ff5722; /* Customize the background color */
+  background-color: #ff5722;
+  padding: 1rem;
+  margin: 1px;
 }
 
 .tariff-title-4 {
-  background-color: #3f51b5; /* Customize the background color */
+  background-color: black;
+  padding: 1rem;
+  margin: 1px;
 }
 
 .tariffs-card .price {
   font-size: 3rem;
-  font-weight: bold;
-  color: #333;
   margin-bottom: 5px;
+  color: #fff;
+  padding: 1.2rem;
+  margin: 1px;
 }
 
 .tariffs-card .currency {
@@ -60,6 +77,37 @@
 .tariffs-card .speed,
 .tariffs-card .comment {
   font-size: 0.9rem;
-  color: #777;
-  margin-top: 10px;
+  margin: 1px;
+  padding: 1rem;
+}
+
+.price-1 {
+  background-color: #33e9ff;
+}
+
+.price-2 {
+  background-color: #23cc84;
+}
+
+.price-3 {
+  background-color: #e15e75;
+}
+
+.price-4 {
+  background-color: #29191c;
+}
+
+.speed {
+  background-color: #cdcdcd;
+}
+
+.comment {
+  background-color: gray;
+}
+
+.tariffs-card:nth-child(3) {
+  transform: scale(1.1);
+  z-index: 1;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }

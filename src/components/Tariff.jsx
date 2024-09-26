@@ -2,7 +2,7 @@ function Tariff({ name, price, speed, comment, index }) {
   return (
     <li className="tariffs-card">
       <h3 className={`tariff-title-${index}`}>{name}</h3>
-      <p className="price">
+      <p className={`price price-${index}`}>
         <span className="currency">руб</span>
         {price} <span className="period">/мес</span>
       </p>
