@@ -32,6 +32,16 @@ h3 {
   border: 2px solid white;
 }
 
+.tariffs-card:hover {
+  transform: scale(1.02);
+}
+
+.selected {
+  border-color: red;
+  background-color: #f1f7f6;
+  transform: scale(1.05);
+}
+
 .tariff-title-1 {
   background-color: #009688;
   padding: 1rem;
@@ -110,4 +120,8 @@ h3 {
   z-index: 1;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+}
+
+.tariffs-card:nth-child(3):hover {
+  transform: scale(1.15);
 }

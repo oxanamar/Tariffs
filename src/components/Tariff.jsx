@@ -1,6 +1,9 @@
-function Tariff({ name, price, speed, comment, index }) {
+function Tariff({ name, price, speed, comment, index, isSelected, onSelect }) {
   return (
-    <li className="tariffs-card">
+    <li
+      className={`tariffs-card ${isSelected ? "selected" : ""}`}
+      onClick={onSelect}
+    >
       <h3 className={`tariff-title-${index}`}>{name}</h3>
       <p className={`price price-${index}`}>
         <span className="currency">руб</span>
